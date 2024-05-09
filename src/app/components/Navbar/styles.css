@@ -1,0 +1,26 @@
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 1rem 2rem;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.light-theme {
+    background-color: white;
+    color: black;
+}
