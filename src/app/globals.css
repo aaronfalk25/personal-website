@@ -18,6 +18,21 @@ p {
   margin-bottom: 15px;
 }
 
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
 .icon {
   font-size: 1.5rem;
   margin-right: 10px;
@@ -28,16 +43,18 @@ p {
   color: #007bff;
 }
 
-.main > * + * {
+.frame {
+  width: 80%;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
 .dark-theme {
-  background-color: black;
-  color: white;
+  background-color: #080808;
+  color: #f0f0f0;
 }
 
 .light-theme {
-  background-color: white;
-  color: black;
+  background-color: #f0f0f0;
+  color: #080808;
 }

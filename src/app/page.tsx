@@ -11,11 +11,14 @@ import Resume from '@/app/components/Resume';
 export default function Home () {
     const { theme } = useAppContext();
     return (
-        <div className={`${theme === 'dark' ? 'dark-theme' : 'light-theme'} main`}> 
+        <div className={`${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+          &nbsp;
+          <div className='frame'> 
           <Hero/>
           <About/>
           <Experience/>
           <Resume/>
+          </div>
         </div>
     )
 }
