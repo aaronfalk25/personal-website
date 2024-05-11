@@ -10,7 +10,7 @@ export const Navbar = () => {
         to: string;
     }
 
-    function mapper(link: Linker) {
+    function linkMapper(link: Linker) {
         return (
             <>
             <Link
@@ -35,7 +35,7 @@ export const Navbar = () => {
 
     return (
         <nav className = 'mb-2'>
-            {links.map(mapper)}
+            {links.map(linkMapper)}
             <ThemePicker/>
         </nav>
     );
