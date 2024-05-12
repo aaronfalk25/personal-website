@@ -1,5 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
+import { motion } from "framer-motion";
 
 export const Resume: React.FC = () => {
     const openResume = () => {
@@ -9,7 +10,11 @@ export const Resume: React.FC = () => {
 
     return (
         <Element name="resume">
-            <section>
+            <motion.section
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+            >
                 <h1>Resume</h1>
                 <p>
                     Click the button below to view and download my resume.
@@ -20,7 +25,7 @@ export const Resume: React.FC = () => {
                 >
                     View Resume
                 </button>
-            </section>
+            </motion.section>
         </Element>
     );
 }

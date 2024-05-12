@@ -1,12 +1,17 @@
 import React from "react";
 import { Element } from "react-scroll";
+import { motion } from "framer-motion";
 
 import './experience.css';
 
 export const Experience: React.FC = () => {
     return (
         <Element name="experience">
-            <section>
+            <motion.section
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+            >
                 <h1>Experience</h1>
                 <p>
                     Currently, I have 2 years of experience in software development. This extends from clubs at Penn State to internships at companies.
@@ -27,7 +32,7 @@ export const Experience: React.FC = () => {
                         <p>Duration: June 2024 - August 2024</p>
                     </li>
                 </ul>
-            </section>
+            </motion.section>
         </Element>
     );
 }

@@ -1,14 +1,16 @@
-.navbar {
+.navbar-container {
     background-color: white;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    z-index: 10;
     padding: 1rem 2rem;
-    margin-bottom: 0.5rem;
 }
 
 .link:hover {

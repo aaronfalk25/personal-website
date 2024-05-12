@@ -3,6 +3,7 @@ import './navbar.css'
 
 import { ThemePicker } from './ThemePicker';
 import { Link } from 'react-scroll';
+import { motion, useScroll } from 'framer-motion';
 
 export const Navbar = () => {
     type Linker = {
@@ -34,11 +35,23 @@ export const Navbar = () => {
         { name: 'Contact', to: 'contact'}
     ]
 
+    const { scrollYProgress } = useScroll();
+
     return (
-        <nav className = 'navbar'>
-            {links.map(linkMapper)}
-            <ThemePicker/>
-        </nav>
+        <div className='navbar-container'>
+            <nav className = 'navbar'>
+                {links.map(linkMapper)}
+                <ThemePicker/>
+            </nav>
+            <motion.div
+                style={{
+                    scaleX: scrollYProgress,
+                    backgroundColor: '#64ffda',
+                    height: '5px',
+                    transformOrigin: 'left'
+                }}
+            />
+        </div>
     );
 }
 

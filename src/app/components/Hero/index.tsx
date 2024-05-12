@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { motion } from "framer-motion";
 
 import "./hero.css";
 
@@ -34,13 +35,21 @@ const Hero: React.FC = () => {
 
     return (
         <Element name="hero">
-            <section className="hero-frame"  style={{ background: gradient }} id='hero-frame'>
-                <h1 className='title'>I'm Aaron Falk</h1>
+            <motion.section
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                className="hero-frame"  
+                style={{ background: gradient }} 
+                id='hero-frame'
+            >
+                <h1 className='title mb-0'>I'm Aaron Falk</h1>
+                <h3 className='mt-0'><i>Software Developer and Tech Enthusiast</i></h3>
                 <div className='flex flex-row'>
               
-                    <div className="mx-auto my-10" style={{ flex: '8' }}>
+                    <div className="mx-auto my-10 px-10 max-w-[1000px]" style={{ flex: '8' }}>
                         <p className='text-xl'>
-                            I'm a student at The Pennsylvania State University, currently pursuing my Bachelor's in Computer Science with a minor in mathematics.
+                            I'm a student at The Pennsylvania State University, currently pursuing my Bachelor's in Computer Science with a minor in Mathematics.
                             I will be graduating in December 2024.
                             As I am studying my coursework, I am learning how to become a software engineer that helps build dynamic, user-friendly applications.
                         </p>
@@ -69,7 +78,7 @@ const Hero: React.FC = () => {
 
 
                 
-            </section>
+            </motion.section>
 
         </Element>
     );
