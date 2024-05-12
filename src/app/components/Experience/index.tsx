@@ -1,6 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
 
+import './experience.css';
+
 export const Experience: React.FC = () => {
     return (
         <Element name="experience">
@@ -11,13 +13,13 @@ export const Experience: React.FC = () => {
             </p>
 
             <ul>
-                <li key="PGT">
+                <li key="PGT" className='experience-item'>
                     <h3>Applied Technology Intern</h3>
                     <p>Company: PGT Trucking</p>
                     <p>Location: Hopewell, PA</p>
                     <p>Duration: May 2022 - August 2023</p>
                 </li>
-                <li key="Lifeway">
+                <li key="Lifeway" className='experience-item'>
                     <h3>Software Engineering Intern (Incoming)</h3>
                     <p>Company: Lifeway Christian Resources</p>
                     <p>Location: Nashville, TN (Remote)</p>
