@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
                 <h3 className='mt-0'><i>Software Developer and Tech Enthusiast</i></h3>
                 <div className='flex flex-row'>
               
-                    <div className="mx-auto my-10 px-10 max-w-[1000px]" style={{ flex: '8' }}>
+                    <div className="mx-auto my-10 md:px-10 max-w-[1000px]" style={{ flex: '8' }}>
                         <p className='text-xl'>
                             I&apos;m a student at The Pennsylvania State University, currently pursuing my Bachelor&apos;s in Computer Science with a minor in Mathematics.
                             I will be graduating in December 2024.

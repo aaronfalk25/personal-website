@@ -38,7 +38,7 @@ export const Navbar = () => {
     const { scrollYProgress } = useScroll();
 
     return (
-        <div className='navbar-container'>
+        <div className='navbar-container hidden md:block'>
             <nav className = 'navbar'>
                 {links.map(linkMapper)}
                 <ThemePicker/>

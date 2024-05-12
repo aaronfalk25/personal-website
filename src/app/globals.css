@@ -23,6 +23,13 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+}
+
 p {
   font-size: 1.2rem;
   margin-bottom: 15px;

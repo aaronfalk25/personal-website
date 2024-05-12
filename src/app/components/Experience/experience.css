@@ -8,3 +8,10 @@
     margin: 20px auto;
     color: #080808;
 }
+
+@media screen and (max-width: 768px) {
+    .experience-item {
+      padding: 5px 10px;
+      width: 80%;
+    }
+  }
