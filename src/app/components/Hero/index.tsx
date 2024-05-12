@@ -47,13 +47,13 @@ const Hero: React.FC = () => {
                 <h3 className='mt-0'><i>Software Developer and Tech Enthusiast</i></h3>
                 <div className='flex flex-row'>
               
-                    <div className="mx-auto my-10 md:px-10 max-w-[1000px]" style={{ flex: '8' }}>
-                        <p className='text-xl'>
+                    <div className="mx-auto my-10 md:px-10" style={{ flex: '8' }}>
+                        <p className='text-xl xl:text-2xl 2xl:text-3xl'>
                             I&apos;m a student at The Pennsylvania State University, currently pursuing my Bachelor&apos;s in Computer Science with a minor in Mathematics.
                             I will be graduating in December 2024.
                             As I am studying my coursework, I am learning how to become a software engineer that helps build dynamic, user-friendly applications.
                         </p>
-                        <p className='text-xl'>
+                        <p className='text-xl xl:text-2xl 2xl:text-3xl'>
                             In my free time, you can find me working on personal projects, lifting weights, or picking up a new hobby.
                         </p>
                     </div>
