@@ -26,7 +26,7 @@ export const Experience: React.FC = () => {
                         <p>Duration: May 2022 - August 2023</p>
                     </li>
                     <li key="Medart" className='experience-item'>
-                        <h3>Technical Services Intern</h3>
+                        <h3>IT Intern</h3>
                         <p>Company: Medart</p>
                         <p>Location: Ellwood City, PA</p>
                         <p>Duration: May 2024</p>
