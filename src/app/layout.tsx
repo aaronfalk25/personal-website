@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aaron Falk Website",
-  description: "This is about Aaron Falk, a CS student at Penn State.",
+  description: "Aaron Falk, Computer Science, Student, Penn State University, Personal Website, Portfolio, About, Contact",
 };
 
 export default function RootLayout({
