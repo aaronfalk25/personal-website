@@ -1,12 +1,12 @@
 "use client";
 
 import { useAppContext } from '@/context';
-import "./globals.css";
 
 import Hero from '@/app/components/Hero';
 import About from '@/app/components/About';
 import Experience from '@/app/components/Experience';
 import Resume from '@/app/components/Resume';
+import Contact from '@/app/components/Contact';
 
 export default function Home () {
     const { theme } = useAppContext();
@@ -14,10 +14,11 @@ export default function Home () {
         <div className={`${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
           &nbsp;
           <div className='frame'> 
-          <Hero/>
-          <About/>
-          <Experience/>
-          <Resume/>
+            <Hero/>
+            <About/>
+            <Experience/>
+            <Resume/>
+            <Contact/>
           </div>
         </div>
     )

@@ -1,5 +1,5 @@
 'use client';
-import './styles.css'
+import './navbar.css'
 
 import { ThemePicker } from './ThemePicker';
 import { Link } from 'react-scroll';
@@ -31,10 +31,11 @@ export const Navbar = () => {
         { name: 'About', to: 'about' },
         { name: 'Experience', to: 'experience' },
         { name: 'Resume', to: 'resume' },
+        { name: 'Contact', to: 'contact'}
     ]
 
     return (
-        <nav className = 'mb-2'>
+        <nav className = 'navbar'>
             {links.map(linkMapper)}
             <ThemePicker/>
         </nav>

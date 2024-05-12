@@ -2,7 +2,9 @@
     background: rgb(240,198,216);
     background: linear-gradient(45deg, rgba(240,198,216,1) 0%, rgba(148,187,233,1) 100%);
     border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
     padding: 10px 20px;
     width: 60%;
     margin: 20px auto;
+    color: #080808;
 }

@@ -10,6 +10,7 @@ import "./hero.css";
 const Hero: React.FC = () => {
     const [gradient, setGradient] = useState<string>('linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%)');
     const [degrees, setDegrees] = useState<number>(90);
+    const [showIcons, setShowIcons] = useState<boolean>(false);
 
     // Rotate gradient using timer
     useEffect(() => {
@@ -18,6 +19,12 @@ const Hero: React.FC = () => {
                 const newDegrees = prevDegrees + 1;
                 const newGradient = `linear-gradient(${newDegrees}deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%)`;
                 setGradient(newGradient);
+                
+                // It takes a second for icons to load CSS styles to override FontAwesome default size. Use this to wait 80ms before showing icons.
+                if (newDegrees == 91) {
+                    setShowIcons(true);
+                }
+
                 return newDegrees;
             });
         }, 80);
@@ -43,9 +50,10 @@ const Hero: React.FC = () => {
                     </div>
 
                     
-                    <div style={{ flex: '2' }}>
+                    <div style={{ flex: '2' }} className='hidden md:block'>
                         <img src="me.jpg" alt="Aaron Falk" className='img' id='profile-pic' />
 
+                        { showIcons && 
                         <div className='p-4 m-auto'>
                             <a href="https://www.linkedin.com/in/aaron-falk-730427229/" target="_blank" rel="noopener noreferrer" className='px-2'>
                                 <FontAwesomeIcon icon={faLinkedin} className='icon' />
@@ -54,6 +62,7 @@ const Hero: React.FC = () => {
                                 <FontAwesomeIcon icon={faGithub} className='icon' />
                             </a>
                         </div>
+                        }
                     </div>
 
                 </div>
