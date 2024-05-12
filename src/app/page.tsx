@@ -10,6 +10,11 @@ import Contact from '@/app/components/Contact';
 
 export default function Home () {
     const { theme } = useAppContext();
+
+    const toTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
         <div className={`${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
           &nbsp;
@@ -19,6 +24,9 @@ export default function Home () {
             <Experience/>
             <Resume/>
             <Contact/>
+            <button onClick={toTop} className="hover:underline">
+              Back to top
+            </button>
           </div>
         </div>
     )
