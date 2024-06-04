@@ -23,7 +23,7 @@ export const About: React.FC = () => {
                 Outside of professional work, I am an avid believer in community and valued friendships.
                 Whether it&apos;s playing volleyball, hiking, or just hanging out with friends, I am always looking for ways to connect with others.
                 At Penn State, I&apos;ve had the great joy of knowing a deep and rich community, and I have learned what it means to be truly valued.
-                Looking ahead, I am excited to see where my journey in software development will take me and the people I will meet along the way.
+                I am excited to bring this same sense of community and value to my future workplace.
                 </p>
             </motion.section>
         </Element>
