@@ -46,8 +46,8 @@ export const Navbar = () => {
             <motion.div
                 style={{
                     scaleX: scrollYProgress,
-                    backgroundColor: '#64ffda',
-                    height: '5px',
+                    backgroundColor: '#2558e6',
+                    height: '8px',
                     transformOrigin: 'left'
                 }}
             />
