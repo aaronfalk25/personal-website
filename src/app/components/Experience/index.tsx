@@ -31,9 +31,9 @@ export const Experience: React.FC = () => {
                         <p>Location: Ellwood City, PA</p>
                         <p>Duration: May 2024</p>
                     </li>
-                    <li key="LifeWay" className='experience-item'>
+                    <li key="Lifeway" className='experience-item'>
                         <h3>Software Engineer Intern</h3>
-                        <p>Company: LifeWay Christian Resources</p>
+                        <p>Company: Lifeway Christian Resources</p>
                         <p>Location: Nashville, TN (Remote)</p>
                         <p>Duration: June 2024 - August 2024</p>
                     </li>
