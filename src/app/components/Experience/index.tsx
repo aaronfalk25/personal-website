@@ -3,6 +3,15 @@ import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 
 import './experience.css';
+import experiences from './experiences.json'
+interface ExperienceItem {
+    key: string,
+    title: string,
+    company: string,
+    location: string,
+    start: string,
+    end: string | null
+}
 
 export const Experience: React.FC = () => {
     return (
@@ -14,29 +23,21 @@ export const Experience: React.FC = () => {
             >
                 <h1>Experience</h1>
                 <p>
-                    Currently, I have 2 years of experience in software development. This extends from clubs at Penn State to internships at companies.
-                    Below, I have listed my professional internship experience.
+                    Currently, I have 2 years of experience in software development. This extends from clubs at Penn State, internships at companies, and full time work.
+                    Below, I have chronologically listed these experiences.
                 </p>
 
                 <ul>
-                    <li key="PGT" className='experience-item'>
-                        <h3>Applied Technology Intern</h3>
-                        <p>Company: PGT Trucking</p>
-                        <p>Location: Hopewell, PA</p>
-                        <p>Duration: May 2022 - August 2023</p>
-                    </li>
-                    <li key="Medart" className='experience-item'>
-                        <h3>IT Intern</h3>
-                        <p>Company: Medart</p>
-                        <p>Location: Ellwood City, PA</p>
-                        <p>Duration: May 2024</p>
-                    </li>
-                    <li key="Lifeway" className='experience-item'>
-                        <h3>Software Engineer Intern</h3>
-                        <p>Company: Lifeway Christian Resources</p>
-                        <p>Location: Nashville, TN (Remote)</p>
-                        <p>Duration: June 2024 - August 2024</p>
-                    </li>
+                    {experiences.map((exp: ExperienceItem) => (
+                        <li key={exp.key} className="experience-item">
+                            <h3>{exp.title}</h3>
+                            <p>Company: {exp.company}</p>
+                            <p>Location: {exp.location}</p>
+                            <p>
+                                Duration: {exp.start} - {exp.end ?? "Current"}
+                            </p>
+                        </li>
+                    ))}
                 </ul>
             </motion.section>
         </Element>

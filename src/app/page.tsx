@@ -6,6 +6,7 @@ import Hero from '@/app/components/Hero';
 import About from '@/app/components/About';
 import Experience from '@/app/components/Experience';
 import Resume from '@/app/components/Resume';
+import Goals from '@/app/components/Goals';
 import Contact from '@/app/components/Contact';
 
 export default function Home () {
@@ -22,7 +23,8 @@ export default function Home () {
             <Hero/>
             <About/>
             <Experience/>
-            <Resume/>
+            {/* <Resume/> */}
+            <Goals/>
             <Contact/>
             <button onClick={toTop} className="hover:underline">
               Back to top

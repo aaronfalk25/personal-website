@@ -16,14 +16,13 @@ export const About: React.FC = () => {
                 The crux of computer science is taking on a new problem and delivering a solution that is elegant, precise, and carefully crafted.
                 </p>
                 <p>
-                I am currently seeking opportunities to grow my skills and knowledge in software development. Whether that is a full-time position, internship, or a project collaboration, I am always open to new opportunities.
-                As I am looking ahead to my graduation in December, I am excited to see where my journey in software development will take me.
+                I am excited to begin my professional software engineering journey with Capital One. As a member of the Technical Development Program (TDP), I will build a strong foundation of building applications with scale, efficiency, and best
+                practices all in mind. I look forward to a long and lasting career with great leadership to guide me.
                 </p>
                 <p>
                 Outside of professional work, I am an avid believer in community and valued friendships.
                 Whether it&apos;s playing volleyball, hiking, or just hanging out with friends, I am always looking for ways to connect with others.
-                At Penn State, I&apos;ve had the great joy of knowing a deep and rich community, and I have learned what it means to be truly valued.
-                I am excited to bring this same sense of community and value to my future workplace.
+                I am excited to bring this same sense of community and value with me in all steps of life.
                 </p>
             </motion.section>
         </Element>

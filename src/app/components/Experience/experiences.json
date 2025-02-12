@@ -1,0 +1,43 @@
+[
+    {
+      "key": "PGT",
+      "title": "Applied Technology Intern",
+      "company": "PGT Trucking",
+      "location": "Hopewell, PA",
+      "start": "May 2022",
+      "end": "August 2023"
+    },
+    {
+      "key": "HackPSU",
+      "title": "Technical Team Member",
+      "company": "HackPSU",
+      "location": "State College, PA",
+      "start": "January 2023",
+      "end": "December 2024"
+    },
+    {
+      "key": "Medart",
+      "title": "IT Intern",
+      "company": "Medart",
+      "location": "Ellwood City, PA",
+      "start": "May 2024",
+      "end": "May 2024"
+    },
+    {
+      "key": "Lifeway",
+      "title": "Software Engineer Intern",
+      "company": "Lifeway Christian Resources",
+      "location": "Nashville, TN (Remote)",
+      "start": "June 2024",
+      "end": "August 2024"
+    },
+    {
+      "key": "Capital One",
+      "title": "Associate Software Engineer",
+      "company": "Capital One",
+      "location": "Richmond, VA",
+      "start": "February 2025",
+      "end": null
+    }
+  ]
+  

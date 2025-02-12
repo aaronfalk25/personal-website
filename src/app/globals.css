@@ -63,6 +63,22 @@ h3 {
   margin-bottom: 2rem;
 }
 
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ol > li {
+  margin-bottom: 0.5rem;
+}
+
+section a {
+  color: #3b82f6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .light-theme {
   background-color: #f0f0f0;

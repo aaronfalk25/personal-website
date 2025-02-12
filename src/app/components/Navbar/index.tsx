@@ -31,7 +31,8 @@ export const Navbar = () => {
         { name: 'Home', to: 'hero' },
         { name: 'About', to: 'about' },
         { name: 'Experience', to: 'experience' },
-        { name: 'Resume', to: 'resume' },
+        // { name: 'Resume', to: 'resume' },
+        { name: 'Goals', to: 'goals' },
         { name: 'Contact', to: 'contact'}
     ]
 

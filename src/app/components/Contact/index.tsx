@@ -15,7 +15,7 @@ export const Contact: React.FC = () => {
                     Want to get in touch? I&apos;m always open to hearing new ideas, suggestions, or opportunities.
                 </p>
                 <p> 
-                    Feel free to email me at: <a href="mailto:aaronfalk25@gmail.com" className="text-blue-500 hover:underline">aaronfalk25@gmail.com</a>
+                    Feel free to email me at: <a href="mailto:aaronfalk25@gmail.com">aaronfalk25@gmail.com</a>
                 </p>
             </motion.section>
         </Element>
