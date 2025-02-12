@@ -11,9 +11,9 @@ export const Goals: React.FC = () => {
                 transition={{ duration: 1 }}
             >
                 <h1>Goals</h1>
-                <h3>Want to know what I'm up to in my free time? Here are some of the things I'm trying to accomplish this year!</h3>
+                <h3>Want to know what I&apos;m up to in my free time? Here are some of the things I&apos;m trying to accomplish this year!</h3>
                 <ol>
-                    <li>Read the Bible chronologically (<a target="_blank" rel="noopener noreferrer" href="https://www.blueletterbible.org/assets-v3/pdf/dbrp/1Yr_ChronologicalPlan.pdf" >This is what I'm following</a>).</li>
+                    <li>Read the Bible chronologically (<a target="_blank" rel="noopener noreferrer" href="https://www.blueletterbible.org/assets-v3/pdf/dbrp/1Yr_ChronologicalPlan.pdf" >This is what I&apos;m following</a>).</li>
                     <li>Complete 250+ DSA problems on Leetcode.</li>
                     <li>Obtain an AWS associate certification.</li>
                     <li>Reach the following gym milestones: squat 315, deadlift 405, bench 275.</li>
