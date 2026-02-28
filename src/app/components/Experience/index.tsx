@@ -23,21 +23,22 @@ export const Experience: React.FC = () => {
             >
                 <h1>Experience</h1>
                 <p>
-                    Currently, I have 2 years of experience in software development. This extends from clubs at Penn State, internships at companies, and full time work.
-                    Below, I have chronologically listed these experiences.
+                    Below is a list of my current and past experience. 
                 </p>
 
                 <ul>
-                    {experiences.map((exp: ExperienceItem) => (
-                        <li key={exp.key} className="experience-item">
-                            <h3>{exp.title}</h3>
-                            <p>Company: {exp.company}</p>
-                            <p>Location: {exp.location}</p>
-                            <p>
-                                Duration: {exp.start} - {exp.end ?? "Current"}
-                            </p>
-                        </li>
-                    ))}
+                    {experiences
+                        .sort((a, b) => new Date(b.start).getTime() - new Date(a.start).getTime())
+                        .map((exp: ExperienceItem) => (
+                            <li key={exp.key} className="experience-item">
+                                <h3>{exp.title}</h3>
+                                <p>Company: {exp.company}</p>
+                                <p>Location: {exp.location}</p>
+                                <p>
+                                    Duration: {exp.start} - {exp.end ?? "Current"}
+                                </p>
+                            </li>
+                        ))}
                 </ul>
             </motion.section>
         </Element>

@@ -16,8 +16,8 @@ export const About: React.FC = () => {
                 The crux of computer science is taking on a new problem and delivering a solution that is elegant, precise, and carefully crafted.
                 </p>
                 <p>
-                I am excited to begin my professional software engineering journey with Capital One. As a member of the Technical Development Program (TDP), I will build a strong foundation of building applications with scale, efficiency, and best
-                practices all in mind. I look forward to a long and lasting career with great leadership to guide me.
+                Currently, I'm working as a software developer at Capital One where I build enterprise-grade software. 
+                Design and intent are at the forefront of the work I do, and no solution gets built without preserving observability and maintainability.
                 </p>
                 <p>
                 Outside of professional work, I am an avid believer in community and valued friendships.

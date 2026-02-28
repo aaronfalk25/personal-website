@@ -5,7 +5,7 @@
 :root {
   text-align: center;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   scrollbar-width: thin;
 }
 
@@ -30,6 +30,7 @@ p {
 
 h1 {
   font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -45,7 +46,7 @@ h3 {
 
 .icon {
   font-size: 2rem;
-  color: #333;
+  color: hsl(140, 79%, 13%) 
 }
 
 .icon:hover {

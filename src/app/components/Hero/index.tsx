@@ -9,16 +9,19 @@ import { motion } from "framer-motion";
 import "./hero.css";
 
 const Hero: React.FC = () => {
-    const [gradient, setGradient] = useState<string>('linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%)');
+    const GRAD = "rgb(30, 14, 40) 0%, rgb(10, 38, 74) 50%, hsl(141, 81%, 22%) 100%";
+
+    const [gradient, setGradient] = useState<string>(`linear-gradient(90deg, ${GRAD})`);
     const [degrees, setDegrees] = useState<number>(90);
     const [showIcons, setShowIcons] = useState<boolean>(false);
 
     // Rotate gradient using timer
     useEffect(() => {
+        const MILLISECOND_WAIT = 80;
         const intervalId = setInterval(() => {
             setDegrees(prevDegrees => {
                 const newDegrees = prevDegrees + 1;
-                const newGradient = `linear-gradient(${newDegrees}deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%)`;
+                const newGradient = `linear-gradient(${newDegrees}deg, ${GRAD}`;
                 setGradient(newGradient);
                 
                 // It takes a second for icons to load CSS styles to override FontAwesome default size. Use this to wait 80ms before showing icons.
@@ -28,7 +31,7 @@ const Hero: React.FC = () => {
 
                 return newDegrees;
             });
-        }, 80);
+        }, MILLISECOND_WAIT);
     
         return () => clearInterval(intervalId);
     }, []);
@@ -44,21 +47,21 @@ const Hero: React.FC = () => {
                 id='hero-frame'
             >
                 <h1 className='title mb-0'>I&apos;m Aaron Falk</h1>
-                <h3 className='mt-0'><i>Software Developer and Tech Enthusiast</i></h3>
+                <h3 className='mt-0'><i>Software Developer</i></h3>
                 <div className='flex flex-row'>
               
-                    <div className="mx-auto my-10 md:px-10" style={{ flex: '8' }}>
+                    <div className="mx-auto my-10 md:px-10" style={{ flex: '15' }}>
                         <p className='text-xl xl:text-2xl 2xl:text-3xl'>
-                            I&apos;m a recent graduate of The Pennsylvania State University with a Bachelor&apos;s in Computer Science and a minor in Mathematics.
-                            As I enter the workforce, I am learning how to become a software engineer that helps build dynamic, user-friendly applications.
+                            I&apos;m a software developer who builds, designs, and solves problems with intent and clarity. Often, the less the better; reduce entropy to pave the way for innovation.
                         </p>
-                        <p className='text-xl xl:text-2xl 2xl:text-3xl'>
-                            In my free time, you can find me working on personal projects, lifting weights, or picking up a new hobby.
+                        <br></br>  
+                        <p className='text-xl xl:text-2xl 2xl:text-3xl'>        
+                            <i>"Simplicity is prerequisite for reliability."</i>
                         </p>
                     </div>
 
                     
-                    <div style={{ flex: '2' }} className='hidden md:block'>
+                    <div style={{ flex: '5' }} className='hidden md:block'>
                         <img src="me.jpg" alt="Aaron Falk" className='img' id='profile-pic' />
 
                         { showIcons && 
